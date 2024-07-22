@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --mainTextColor-dark: #fff;
+    --secondaryTextColor-dark: #16aadb;
+    --mainLinkColor-dark: #1ebed6;
+    --mainBorderColor-dark: #2b3031;
+    --mainBgColor-dark: #131415;
+
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:#fff;
+    --mainLinkColor-light:#0db5b8be;
+    --mainLinkColor-light:rgb(114, 93, 35);
+    --mainBgColor-light:rgb(249, 250, 251);
+
+}
+
+
+body {
+    font-family:Helvetica, sans-serif;
+    background-color: var(--mainBgColor-dark);
+    color: var(--mainLinkColor-light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+p,span,li,a{
+    color: var(--mainTextColor-dark);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: underline;
+    color:var(--mainLinkColor-dark);
+    font-size: 18px;
+}
+
+li{
+    line-height:1.9em;
+}
+
+h1{
+    color:var(--secondaryTextColor-light)
+}
+
+h2{
+    text-decoration: underline;
+    color:var(--secondaryTextColor-dark)
+}
+
+div{
+    color:var(--secondaryTextColor-light)
+}
+#container--main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.section--page {
+    padding: 1em 0;
+}
+
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#profile-pic {
+    border-radius: 70%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#user-name {
+    font-size: 2em;
+    margin: 0;
+}
+
+#bio, #address, #email, #phone_no {
+    margin: 0.2em 0;
+}
+
+.line-break {
+    border-bottom: 2px solid var(--mainLinkColor-dark);
+    margin: 0.5em 0;
+}
+
+#socials--list {
+    display:flex;
+    gap: 1em;
+}
+
+#socials--list a {
+    color: var(--mainLinkColor-dark);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#socials--list a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card--techstack, .card--softskills, .card--physicalskills, .me-time {
+    background-color: var(--mainBorderColor-dark);
+    padding: 1em;
+    border-radius: 5px;
+    margin: 0.5em 0;
+}
+
+.card--work-history {
+    padding-left: 1em;
+    margin: 1em 0;
+    border-left: 3px solid var(--mainBorderColor-dark);
+}
+
+.card--project {
+    margin: 0.5em 0;
+}
+
+.card--project a {
+    color: var(--mainLinkColor-dark);
+    text-decoration: none;
+}
+
+.card--project a:hover {
+    text-decoration: underline;
+}
