@@ -7,14 +7,17 @@
     --mainBorderColor-dark: #2b3031;
     --mainBgColor-dark: #131415;
 
-    --mainTextColor-light: #000;
-    --secondaryTextColor-light: #fff;
-    --mainLinkColor-light: rgb(114, 93, 35);
-    --mainBgColor-light: rgb(249, 250, 251);
+    --mainTextColor-light:#000;
+    --secondaryTextColor-light:#fff;
+    --mainLinkColor-light:#0db5b8be;
+    --mainLinkColor-light:rgb(114, 93, 35);
+    --mainBgColor-light:rgb(249, 250, 251);
+
 }
 
+
 body {
-    font-family: Helvetica, sans-serif;
+    font-family:Helvetica, sans-serif;
     background-color: var(--mainBgColor-dark);
     color: var(--mainLinkColor-light);
     margin: 0;
@@ -22,34 +25,33 @@ body {
     line-height: 1.6;
 }
 
-p, span, li, a {
+p,span,li,a{
     color: var(--mainTextColor-dark);
     font-size: 1em;
 }
 
-a {
+a{
     text-decoration: underline;
-    color: var(--mainLinkColor-dark);
+    color:var(--mainLinkColor-dark);
     font-size: 18px;
 }
 
-li {
-    line-height: 1.9em;
+li{
+    line-height:1.9em;
 }
 
-h1 {
-    color: var(--secondaryTextColor-light);
+h1{
+    color:var(--secondaryTextColor-light)
 }
 
-h2 {
+h2{
     text-decoration: underline;
-    color: var(--secondaryTextColor-dark);
+    color:var(--secondaryTextColor-dark)
 }
 
-div {
-    color: var(--secondaryTextColor-light);
+div{
+    color:var(--secondaryTextColor-light)
 }
-
 #container--main {
     max-width: 700px;
     margin: 0 auto;
@@ -88,9 +90,8 @@ div {
 }
 
 #socials--list {
-    display: flex;
+    display:flex;
     gap: 1em;
-    flex-wrap: wrap;
 }
 
 #socials--list a {
@@ -104,37 +105,25 @@ div {
 }
 
 ul {
-    list-style-type: disc;
-    padding-left: 1.2em;
+    list-style-type: none;
+    padding: 0;
 }
 
-#wrapper--techstack__items span,
-#soft--skills__items span,
-#extra--activities span,
-#hobbies--list span {
-    position: relative;
-    padding-left: 1.2em;
-    display: inline-block;
-    margin: 0.3em 0;
-    font-weight: 500;
-    color: #ddd;
-}
-
-#wrapper--techstack__items span::before,
-#soft--skills__items span::before,
-#extra--activities span::before,
-#hobbies--list span::before {
-    content: "▶";
-    position: absolute;
-    left: 0;
-    color: #16aadb;
-    font-size: 0.9em;
+.card--techstack, .card--softskills, .card--physicalskills, .me-time {
+    background-color: var(--mainBorderColor-dark);
+    padding: 1em;
+    border-radius: 5px;
+    margin: 0.5em 0;
 }
 
 .card--work-history {
     padding-left: 1em;
     margin: 1em 0;
     border-left: 3px solid var(--mainBorderColor-dark);
+}
+
+.card--project {
+    margin: 0.5em 0;
 }
 
 .card--project a {
